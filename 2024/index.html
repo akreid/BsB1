@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://bsb1.rock/">
+    <meta property="og:title" content="BsB1 2.5호ㅣ 콘서트">
+    <meta property="og:description" content="BsB1이 여러분과 함께 하려고 합니다">
+    <meta property="og:image" content="./res/img/og.jpg">
+    <title>BsB1 First Concert</title>
+    <link rel="stylesheet" href="./res/css/style.css">
+</head>
+
+<body>
+    <section class="area top">
+        <img src="./res/img/img_main.jpg" alt>
+    </section>
+
+    <section class="area map">
+        <div class="area-tit">
+            <h2>오시는 길</h2>
+            <p class="description">BsB1의 공연장소를 안내합니다.</p>
+        </div>
+
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1697600151540" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1697600151540",
+                "key" : "2ghkg",
+                "mapWidth" : "640",
+                "mapHeight" : "360"
+            }).render();
+        </script>
+
+        <p class="margin">
+            대구 서구 비산동 1655-1 <br>
+            성원 스마트컷팅건물 지하1층
+        </p>
+        <p class="margin">주차 공간이 협소 하므로<br>대중교통을 이용해주시기 바랍니다.</p>
+    </section>
+</body>
+
+</html>
