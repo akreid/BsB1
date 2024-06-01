@@ -23,6 +23,7 @@
 
 .area.top {
     padding: 0;
+    position: relative;
 }
 
 .area.top img {
@@ -55,87 +56,12 @@
     border-bottom: 2px solid #EA5514;
 }
 
-.area.intro p {
-    color: #555;
-    line-height: 1.4;
-    font-size: 18px;
-}
-
-.area.intro p:not(:first-of-type) {
-    margin-top: 10px;
-}
-
-.area-tit {
+.area.top a {
     display: block;
-    margin-bottom: 30px
-}
-
-.area-tit h2 {
-    display: block;
-    font-size: 36px;
-    color: #000;
-}
-
-.area-tit p.description {
-    display: block;
-    color: #7d6030;
-    font-size: 16px;
-}
-
-.list-music {
-    border-top: 1px solid #ddd;
-}
-
-.list-music li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    font-size: 18px;
-}
-
-.list-music li span {
-    display: block;
-    color: #888;
-    font-size: 14px;
-}
-
-.list-member::after {
-    content:"";
-    display: block;
-    clear: both;
-}
-
-.list-member li {
-    width: 33.33%;
-    float: left;
-    text-align: center;
-}
-
-.list-member li:nth-of-type(3) ~ li {
-    margin-top: 20px;
-}
-
-.list-member li img {
-    display: block;
-    width: 96px;
-    height: 96px;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-.list-member li span {
-    margin-top: 10px;
-    color: #888;
-    font-size: 14px;
-}
-
-.list-member li p {
-    font-size: 18px;
-}
-
-.root_daum_roughmap_landing {
-    width: 100% !important;
-}
-
-.margin{
-    margin-top: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    height: 20%;
+    z-index: 10;
 }
