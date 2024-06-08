@@ -12,6 +12,12 @@
     font-style: normal;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .area {
     display: block;
     position: relative;
@@ -26,7 +32,16 @@
     position: relative;
 }
 
-.area.top img {
+
+.sectionwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.area.top img,
+.area.bottom img {
     display: block;
     position: relative;
     width: 100%;
@@ -64,4 +79,9 @@
     right: 0;
     height: 20%;
     z-index: 10;
+}
+
+.area.bottom {
+    padding: 0;
+
 }
